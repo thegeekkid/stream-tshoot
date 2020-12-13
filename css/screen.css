@@ -1,0 +1,172 @@
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.025em;
+    background-color: #00718b;
+}
+
+body {
+    max-width: 90em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 1em;
+}
+
+h2 {
+    padding-top: 1em;
+}
+
+img {
+    max-width: 100%;
+}
+
+label {
+    display: block;
+}
+
+table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+}
+
+td {
+    padding: 0.5em;
+    text-align: center;
+
+}
+
+td.sticky {
+    position: absolute;
+    background-color: #fff;
+    width: 10em;
+}
+td.next {
+    padding-left: 11em;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=url] {
+    display: block;
+    padding: 1em;
+    width: 60%;
+}
+
+select {
+    display: block;
+    padding: 1em;
+    width: 60%;
+}
+textarea {
+    display: block;
+    padding: 1em;
+    width: 60%;
+    min-height: 10em;
+}
+
+input[type=submit] {
+    display: block;
+    margin-top: 1em;
+    padding: 1.25em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+input[type=checkbox] {
+    width: 1.3em;
+    height: 1.3em;
+}
+
+hide {
+    display:none;
+}
+
+.iubenda-black {
+    display: block !important;
+    margin-top: 2em !important;
+}
+
+.hide {
+    display:none;
+}
+
+.hidden {
+    display:none;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.logo {
+    max-height: 7.5em;
+    max-width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+
+}
+
+.green {
+    color: #17d42a;
+}
+.yellow {
+    color: #ebb434;
+}
+.red {
+    color: #FF0000;
+}
+
+.table_brand {
+    height: 2em;
+}
+
+
+#banner {
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+#edit_table input[type=text], #account_settings input[type=text] {
+    display: inline-block;
+    padding: 0.1em;
+    width: 100%;
+}
+
+
+#account_settings input[type=submit] {
+    display: block;
+    margin-top: 0em;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+}
+
+#footer {
+    margin-top: 3em;
+}
+
+#generate {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+#menuoptions {
+    text-align: center;
+}
+
+#menuoptions input[type=submit] {
+    display: inline-block;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+

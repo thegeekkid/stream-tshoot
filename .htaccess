@@ -1,0 +1,21 @@
+RewriteEngine on
+<Files ~ "\.inc$">
+  Order allow,deny
+  Deny from all
+</Files>
+
+php_value session.cookie_httponly 1
+php_value session.cookie_secure 1
+php_value session.cookie_samesite "Strict"
+php_value session.hash_function "sha256"
+php_value session.name "__Host-PHPSESSID"
+
+
+Header set X-XSS-Protection "1; mode=block"
+Header set X-Frame-Options "SAMEORIGIN"
+Header set X-Content-Type-Options "nosniff"
+Header set Referrer-Policy "same-origin"
+Header set Feature-Policy "accelerometer 'none'; ambient-light-sensor 'none'; autoplay 'none'; battery 'none'; camera 'none'; display-capture 'none'; document.domain 'none'; encrypted-media 'none'; execution-while-not-rendered 'none'; execution-while-out-of-viewport 'none'; fullscreen 'none'; geolocation 'none'; gyroscope 'none'; layout-animations 'none'; legacy-image-formats 'none'; magnetometer 'none'; microphone 'none'; midi 'none'; navigation-override 'none'; oversized-images 'self'; payment 'self'; picture-in-picture 'none'; publickey-credentials 'none'; sync-hxr 'none'; usb 'none'; vr 'none'; wake-lock 'none'; xr-spatial-tracking 'none';"
+Header set Content-Security-Policy "default-src 'self' 'sha256-9H2TWHuQbvdcVoSGOCQlE6aZqE1Nj2SVeNysqTri0SY=' https://www.youtube.com https://cdn.iubenda.com; font-src 'self' data: *.gstatic.com; style-src 'self' 'unsafe-inline' https://cdn.iubenda.com"
+
+DirectoryIndex index.php
