@@ -50,6 +50,7 @@ if (isset($_POST['submitting'])) {
 <h1>Audio troubleshooting</h1>
 <p>Troubleshooting volume issues</p>
 <p>Ok, please adjust the video volume by hovering over the video, the over the volume icon, and dragging the bar to the left or right.</p>
+<img src="../../images/video_volume_1.png" />
 <form id="issue_type" action="2.php" method="post">
     <input type="hidden" id="submitting" name="submitting" value="true" />
     <label for="hear">Did adjusting the volume on the video help?</label>
