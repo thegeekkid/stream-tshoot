@@ -29,7 +29,7 @@ if (isset($_POST['submitting'])) {
                 header("Location: no_audio/1.php");
             }else {
                 if (($issue === "Soft") || ($issue === "Loud")) {
-                    header("Location: volume_/1.php");
+                    header("Location: volume/1.php");
                 }else {
                         if ($issue === "Distorted") {
                             header("Location: distorted_audio/1.php");
